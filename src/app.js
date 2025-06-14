@@ -3,7 +3,6 @@ import cookieParser from "cookie-parser";
 import cors from "cors";    
 import e from "express";
 
-
 const app = express();
 
 
@@ -29,5 +28,10 @@ app.use(express.static("public"));
 
 // middleware to parse cookies, cookies are controlled by server only.
 app.use(cookieParser());
+
+
+// import all routes
+import userRoutes from "./routes/user.routes.js";
+app.use("/api/v1/users", userRoutes);
 
 export default app;
