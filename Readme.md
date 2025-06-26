@@ -187,32 +187,32 @@ cd PlayTube
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Fork the repo
+1. Fork the repo
 
-Create a new branch (git checkout -b feature/feature-name)
+2. Create a new branch (git checkout -b feature/feature-name)
 
-Commit your changes (git commit -m 'Add some feature')
+3. Commit your changes (git commit -m 'Add some feature')
 
-Push to the branch (git push origin feature/feature-name)
+4. Push to the branch (git push origin feature/feature-name)
 
-Open a pull request
+5. Open a pull request
 
-
+---
 📜 License
 This project is licensed under the MIT License.
 
-🙌 Acknowledgements
-Inspired by YouTube and similar video-sharing platforms.
-
-Thanks to open-source communities for tools and frameworks.
 
 
-🌍 Connect with Me
-GitHub: TANiSH-17
+---
 
-Email: tanishkskr@gmail.com 
+## 📬 Contact
 
+**Tanish Kumar**  
+GitHub: [@TANiSH-17](https://github.com/TANiSH-17)  
+Email: tanishkskr@gmail.com
 
+---
 
-
+**Developed and maintained by Tanish Kumar.**  
+If you found this project helpful, feel free to ⭐ the repository and share your thoughts!
 
