@@ -9,9 +9,16 @@ import {verifyJWT} from "../middlewares/auth.middleware.js"
 
 const router = Router();
 
-router.use(verifyJWT); // Apply verifyJWT middleware to all routes in this file
+// Apply verifyJWT middleware to all routes in this file
+// This ensures that a user must be logged in to perform any comment-related action.
+router.use(verifyJWT); 
 
-router.route("/:videoId").get(getVideoComments).post(addComment);
-router.route("/c/:commentId").delete(deleteComment).patch(updateComment);
+router.route("/:videoId")
+    .get(getVideoComments)
+    .post(addComment);
 
-export default router
+router.route("/c/:commentId")
+    .delete(deleteComment)
+    .patch(updateComment);
+
+export default router;

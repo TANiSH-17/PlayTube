@@ -1,50 +1,29 @@
-import { Router } from "express";
-import { 
-    loginUser, 
-    logoutUser, 
-    registerUser, 
-    refreshAccessToken, 
-    changeCurrentPassword, 
-    getCurrentUser, 
-    updateUserAvatar, 
-    updateUserCoverImage, 
-    getUserChannelProfile, 
-    getWatchHistory, 
-    updateAccountDetails
-} from "../controllers/user.controller.js";
-import {upload} from "../middlewares/multer.middleware.js"
-import { verifyJWT } from "../middlewares/auth.middleware.js";
+import mongoose, {Schema} from "mongoose";
+import mongooseAggregatePaginate from "mongoose-aggregate-paginate-v2";
 
-
-const router = Router()
-
-router.route("/register").post(
-    upload.fields([
-        {
-            name: "avatar",
-            maxCount: 1
-        }, 
-        {
-            name: "coverImage",
-            maxCount: 1
+const commentSchema = new Schema(
+    {
+        content: {
+            type: String,
+            required: true
+        },
+        video: {
+            type: Schema.Types.ObjectId,
+            ref: "Video"
+        },
+        owner: {
+            type: Schema.Types.ObjectId,
+            ref: "User"
         }
-    ]),
-    registerUser
-    )
+    }, 
+    {
+        timestamps: true
+    }
+);
 
-router.route("/login").post(loginUser)
+// This plugin is necessary for the pagination functionality used in your controller
+commentSchema.plugin(mongooseAggregatePaginate);
 
-//secured routes
-router.route("/logout").post(verifyJWT,  logoutUser)
-router.route("/refresh-token").post(refreshAccessToken)
-router.route("/change-password").post(verifyJWT, changeCurrentPassword)
-router.route("/current-user").get(verifyJWT, getCurrentUser)
-router.route("/update-account").patch(verifyJWT, updateAccountDetails)
-
-router.route("/avatar").patch(verifyJWT, upload.single("avatar"), updateUserAvatar)
-router.route("/cover-image").patch(verifyJWT, upload.single("coverImage"), updateUserCoverImage)
-
-router.route("/c/:username").get(verifyJWT, getUserChannelProfile)
-router.route("/history").get(verifyJWT, getWatchHistory)
-
-export default router
+// The 'export default' is crucial here. It makes sure that when you import this file,
+// you get the Comment model directly.
+export default mongoose.model("Comment", commentSchema);
