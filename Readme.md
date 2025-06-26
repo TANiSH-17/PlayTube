@@ -13,9 +13,7 @@ This project was built from the ground up using vanilla HTML, CSS, and JavaScrip
 * **Watch Later Management Page**: A dedicated page displays all the videos a user has saved. From here, users can easily view their playlist and remove videos they've already watched or are no longer interested in.
 * **Fully Responsive Design**: The application is built with a mobile-first approach, ensuring a clean and intuitive layout that gracefully adapts to all screen sizes. It provides an optimal user experience on desktops, tablets, and mobile phones alike.
 
-## 🚀 Live Demo
 
-[Link to your live demo]
 
 ## 🛠️ Tech Stack & Rationale
 
