@@ -183,6 +183,7 @@ cd PlayTube
    cd client
    npm start
 
+----
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
