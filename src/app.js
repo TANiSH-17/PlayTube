@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors({
     // This URL must match the one your React app is running on
-    origin: 'https://play-tube-hwgq.vercel.app',
+    origin: 'http://localhost:5173',
     credentials: true
 }));
 
