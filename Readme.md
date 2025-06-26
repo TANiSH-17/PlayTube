@@ -158,8 +158,8 @@ You can deploy PlayTube on:
 
 1. Clone the repository:
 
-git clone https://github.com/TANiSH-17/PlayTube.git
-cd PlayTube
+  git clone https://github.com/TANiSH-17/PlayTube.git
+  cd PlayTube
 
 2. Install dependencies for both client and server:
    cd server
@@ -185,6 +185,7 @@ cd PlayTube
 
 ----
 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
 
 1. Fork the repo
@@ -199,6 +200,7 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 📜 License
+
 This project is licensed under the MIT License.
 
 
