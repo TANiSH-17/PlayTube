@@ -159,6 +159,7 @@ You can deploy PlayTube on:
 1. Clone the repository:
 
   git clone https://github.com/TANiSH-17/PlayTube.git
+  
   cd PlayTube
 
 2. Install dependencies for both client and server:
