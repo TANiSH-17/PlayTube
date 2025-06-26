@@ -1,6 +1,6 @@
 # PlayTube 🎬
 
-PlayTube is a video library application designed to replicate the core experience of a modern video-sharing platform. It serves as a go-to destination for discovering and enjoying a vast collection of videos. The application allows users to browse a curated feed, search for specific content, watch videos in a dedicated player, and manage a personal "Watch Later" list.
+PlayTube is a front-end video library application designed to replicate the core experience of a modern video-sharing platform. It serves as a go-to destination for discovering and enjoying a vast collection of videos. The application allows users to browse a curated feed, search for specific content, watch videos in a dedicated player, and manage a personal "Watch Later" list.
 
 This project was built from the ground up using vanilla HTML, CSS, and JavaScript, with a strong focus on mastering fundamental web development concepts without relying on frameworks or libraries. It demonstrates key front-end skills, including DOM manipulation, event handling, asynchronous JavaScript for data fetching, and managing application state locally.
 
@@ -13,7 +13,9 @@ This project was built from the ground up using vanilla HTML, CSS, and JavaScrip
 * **Watch Later Management Page**: A dedicated page displays all the videos a user has saved. From here, users can easily view their playlist and remove videos they've already watched or are no longer interested in.
 * **Fully Responsive Design**: The application is built with a mobile-first approach, ensuring a clean and intuitive layout that gracefully adapts to all screen sizes. It provides an optimal user experience on desktops, tablets, and mobile phones alike.
 
+## 🚀 Live Demo
 
+[Link to your live demo]
 
 ## 🛠️ Tech Stack & Rationale
 
