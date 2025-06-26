@@ -2,7 +2,15 @@ import express from "express"
 import cors from "cors"
 import cookieParser from "cookie-parser"
 
-const app = express()
+// In BACKENDPROJECT/src/app.js
+const app = express();
+
+app.use(cors({
+    // This URL must match the one your React app is running on
+    origin: 'https://play-tube-hwgq.vercel.app',
+    credentials: true
+}));
+
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
@@ -36,6 +44,9 @@ app.use("/api/v1/comments", commentRouter)
 app.use("/api/v1/likes", likeRouter)
 app.use("/api/v1/playlist", playlistRouter)
 app.use("/api/v1/dashboard", dashboardRouter)
+
+
+// ... rest of your backend app.js
 
 // http://localhost:8000/api/v1/users/register
 
